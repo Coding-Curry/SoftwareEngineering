@@ -19,7 +19,8 @@ public class 数据存储与计算 : MonoBehaviour
     public Text wupianfangchatext;
     public Text wupianbiaozhunchatext;
     public Text error;
-    
+    public GameObject resultlist;
+
     public
 
     // Start is called before the first frame update
@@ -37,10 +38,12 @@ public class 数据存储与计算 : MonoBehaviour
     {
         if(ListX.Count != ListFreq.Count || ListX.Count==0 || ListFreq.Count==0)
         {
+            resultlist.SetActive(false);
             error.text="输入有误，请检查";
         }
         else
         {
+            error.text="";
             calculate();
         }
     }
@@ -78,6 +81,7 @@ public class 数据存储与计算 : MonoBehaviour
         youpianbiaozhunchatext.text="有偏标准差="+Math.Sqrt(var/count).ToString();
         wupianfangchatext.text="无偏方差="+(var/(count-1)).ToString();
         wupianbiaozhunchatext.text="无偏标准差="+Math.Sqrt(var/(count-1)).ToString();
+        resultlist.SetActive(true);
     }
     
 }
