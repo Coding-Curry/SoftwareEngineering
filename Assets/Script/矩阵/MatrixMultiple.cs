@@ -36,9 +36,9 @@ public class MatrixMultiple : MonoBehaviour
         }
         else
         {
-            for(int i=0;i<line2;i++)//筛选加入乘法运算的矩阵部分
+            for(int i=0;i<row1;i++)//筛选加入乘法运算的矩阵部分
             {
-                for(int j=0;j<row1;j++)//结合矩阵的乘法规则进行计算
+                for(int j=0;j<line2;j++)//结合矩阵的乘法规则进行计算
                 {
                     if(line1==4)
                     {

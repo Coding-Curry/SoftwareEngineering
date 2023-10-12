@@ -10,6 +10,7 @@ public class returnmenu : MonoBehaviour
     public GameObject panel4;
     public GameObject panel5;
     public GameObject panel6;
+    public GameObject panel7;
     public GameObject menu;
     // Start is called before the first frame update
     void Start()
@@ -30,6 +31,7 @@ public class returnmenu : MonoBehaviour
        panel4.gameObject.SetActive(false);
        panel5.gameObject.SetActive(false);
        panel6.gameObject.SetActive(false);
+       panel7.gameObject.SetActive(false);
        menu.gameObject.SetActive(true);
     }
 }

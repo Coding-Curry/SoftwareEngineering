@@ -5,6 +5,7 @@ using UnityEngine;
 public class Switchfunction : MonoBehaviour
 {
     public GameObject panel;
+    public GameObject menu;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,5 +20,6 @@ public class Switchfunction : MonoBehaviour
     public void click()
     {
         panel.gameObject.SetActive(true);
+        menu.SetActive(false);
     }
 }
